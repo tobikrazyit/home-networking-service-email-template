@@ -82,13 +82,15 @@
         border-radius: 5px;
       }
       .card-des {
-        margin-top: -50px;
-        margin-left: 21px;
+        position: absolute;
+        bottom: 5%;
+        left: 8%;
+        color: #fff;
         font-size: 14px;
         font-weight: 600;
         font-family: "Montserrat", sans-serif;
         line-height: 16px;
-        color: #fff;
+        margin: 0;
       }
       .footer-container {
         padding: 37px 75px;
@@ -121,16 +123,12 @@
 
       .card-content {
         position: relative;
-      }
-      .card-des {
-        position: absolute;
-        bottom: 5%;
-        color: #fff;
+        border-spacing: 0px !important;
       }
 
       @media (max-width: 778px) {
         .navbar-container {
-          padding: 15px 40px;
+          padding: 15px 30px;
         }
 
         .upper-div {
@@ -152,7 +150,7 @@
           padding: 36px 0 20px 0;
         }
         .main-card-container {
-          padding: 0px 20px 30px 20px;
+          padding: 0px 10px 10px 10px;
         }
         .card-container {
           grid-template-columns: repeat(2, 1fr);
@@ -180,7 +178,7 @@
       }
       @media screen and (max-width: 400px) {
         .navbar-container {
-          padding: 10px 20px;
+          padding: 10px 10px;
         }
         .logo {
           width: 80px;
@@ -193,23 +191,13 @@
           padding-bottom: 30px;
         }
         .title {
-          font-size: 24px;
-          line-height: 28px;
+          font-size: 18px;
+          line-height: 22px;
           font-weight: 600;
           padding-bottom: 15px;
           margin: 0;
         }
       }
-      /* @media (max-width: 1200px) {
-        .card-container {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 15px;
-        }
-        .card-des {
-          font-size: 20px;
-          line-height: 24px;
-        }
-      } */
     </style>
   </head>
   <body>
@@ -228,7 +216,7 @@
       </table>
       <table style="width: 100%; padding: 0; margin: 0">
         <tr>
-          <td>
+          <td style="width: 100%">
             <a href=""
               ><img
                 style="
@@ -236,6 +224,8 @@
                   height: auto;
                   position: relative;
                   z-index: -1;
+                  padding: 0;
+                  margin-top: -4px;
                 "
                 src="images/banner-image.png"
                 alt="banner image"
@@ -266,7 +256,7 @@
         <tr>
           <td>
             <h1 class="service-title">Other Services</h1>
-            <table style="width: 100%">
+            <table style="width: 100%; border-spacing: 0px">
               <tr>
                 <td class="card-container">
                   <table style="width: 100%">
