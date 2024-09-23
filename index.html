@@ -128,9 +128,16 @@
 
       @media (max-width: 778px) {
         .navbar-container {
-          padding: 15px 30px;
+          padding: 10px 20px;
         }
-
+        .logo {
+          width: 80px;
+          height: 28px;
+        }
+        .social-link-image {
+          width: 70px;
+          height: 10px;
+        }
         .upper-div {
           padding: 0 20px;
         }
@@ -143,6 +150,7 @@
           padding: 6px 18px;
           font-size: 20px;
           line-height: 23px;
+          border-radius: 5px;
         }
         .service-title {
           font-size: 24px;
@@ -191,11 +199,24 @@
           padding-bottom: 30px;
         }
         .title {
-          font-size: 18px;
-          line-height: 22px;
+          font-size: 22px;
+          line-height: 28px;
           font-weight: 600;
           padding-bottom: 15px;
           margin: 0;
+        }
+        .footer-logo {
+          width: 72px;
+          height: 26px;
+        }
+        .footer-para {
+          font-size: 8px;
+          line-height: 14px;
+        }
+        .copyright-para {
+          font-size: 8px;
+          line-height: 28px;
+          padding: 5px 0px;
         }
       }
     </style>
@@ -209,7 +230,10 @@
               <img class="logo" src="images/logo.png" alt="logo" />
             </a>
             <a href="#"
-              ><img src="images/social-links.png" alt="social media links"
+              ><img
+                class="social-link-image"
+                src="images/social-links.png"
+                alt="social media links"
             /></a>
           </td>
         </tr>
@@ -320,7 +344,11 @@
               <tr>
                 <td>
                   <a href="#">
-                    <img src="images/footer-logo.png" alt="footer logo" />
+                    <img
+                      class="footer-logo"
+                      src="images/footer-logo.png"
+                      alt="footer logo"
+                    />
                   </a>
                 </td>
               </tr>
